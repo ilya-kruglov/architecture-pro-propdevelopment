@@ -1,0 +1,22 @@
+# Директория с сертификатами и ключами пользователей
+Task4/k8s-users/
+*.key
+*.crt
+*.csr
+*.kubeconfig
+*.pem
+
+# Minikube локальные файлы
+.minikube/
+.kube/
+
+# Логи
+*.log
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
