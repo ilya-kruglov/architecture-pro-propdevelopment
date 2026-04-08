@@ -1,0 +1,224 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/28.2.5 Chrome/138.0.7204.251 Electron/37.6.1 Safari/537.36" version="28.2.5">
+  <diagram name="Безопасность данных PropDevelopment" id="data-security-mindmap">
+    <mxGraphModel dx="2788" dy="2829" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="1200" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="center" value="&lt;b&gt;Безопасность данных&lt;/b&gt;&lt;br&gt;PropDevelopment" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#083F75;fontColor=#ffffff;fontSize=16;fontStyle=1;strokeColor=#06315C;" parent="1" vertex="1">
+          <mxGeometry x="670" y="680" width="200" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="cat1" value="&lt;b&gt;Публичные данные&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#6B8E23;fontColor=#ffffff;strokeColor=#556B2F;" parent="1" vertex="1">
+          <mxGeometry x="304.99" y="690" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="edge1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="center" target="cat1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="465" y="720" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="cat1_data1" value="Информация о ЖК&lt;br&gt;(адреса, кол-во этажей,&lt;br&gt;планировки)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E6E6E6;fontColor=#333333;" parent="1" vertex="1">
+          <mxGeometry x="284.99" y="780" width="200" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="edge1d1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=0.833;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="cat1" target="cat1_data1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="274.99" y="740" />
+              <mxPoint x="274.99" y="810" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="cat1_data2" value="Стоимость квартир" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E6E6E6;fontColor=#333333;" parent="1" vertex="1">
+          <mxGeometry x="284.99" y="860" width="200" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="edge1d2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="cat1" target="cat1_data2" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="264.99" y="720" />
+              <mxPoint x="264.99" y="885" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="cat1_risk" value="&lt;b&gt;Риск: Обесценивание данных&lt;/b&gt;&lt;br&gt;Оценка: &lt;span style=&quot;color:#FF8C00;&quot;&gt;Незначительный&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFE4B5;fontColor=#333333;strokeColor=#FF8C00;" parent="1" vertex="1">
+          <mxGeometry x="284.99" y="930" width="200" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="edge1r" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.25;exitDx=0;exitDy=0;" parent="1" source="cat1" target="cat1_risk" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="254.99" y="705" />
+              <mxPoint x="254.99" y="960" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="cat1_expl" value="Публичные данные&lt;br&gt;дублируются на сайтах-агрегаторах.&lt;br&gt;Утечка не нанесёт ущерба,&lt;br&gt;но потеря актуальности&lt;br&gt;снизит ценность для клиентов." style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFACD;fontColor=#333333;fontSize=10;align=left;" parent="1" vertex="1">
+          <mxGeometry x="264.99" y="1010" width="240" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="edge1e" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;" parent="1" source="cat1_risk" target="cat1_expl" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="cat2" value="&lt;b&gt;Внутренние данные&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#4682B4;fontColor=#ffffff;strokeColor=#315A7C;" parent="1" vertex="1">
+          <mxGeometry x="300" y="150" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="edge2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0.25;exitY=0;exitDx=0;exitDy=0;" parent="1" source="center" target="cat2" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="720" y="180" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="cat2_data1" value="Логи доступа сотрудников&lt;br&gt;(AD, Keycloak)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E6E6E6;fontColor=#333333;" parent="1" vertex="1">
+          <mxGeometry x="220" y="240" width="260" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="edge2d1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=-0.002;exitY=0.84;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="cat2" target="cat2_data1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="210" y="200" />
+              <mxPoint x="210" y="265" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="cat2_data2" value="Конфигурация сервисов&lt;br&gt;(без секретов)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E6E6E6;fontColor=#333333;" parent="1" vertex="1">
+          <mxGeometry x="220" y="310" width="260" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="edge2d2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0.005;exitY=0.676;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="cat2" target="cat2_data2" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="cat2_data3" value="Метрики и мониторинг" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E6E6E6;fontColor=#333333;" parent="1" vertex="1">
+          <mxGeometry x="220" y="380" width="260" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="edge2d3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="cat2" target="cat2_data3" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="190" y="180" />
+              <mxPoint x="190" y="405" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="cat2_risk" value="&lt;b&gt;Риск: Некачественные данные&lt;/b&gt;&lt;br&gt;Оценка: &lt;span style=&quot;color:#FF4500;&quot;&gt;Значительный&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFDAB9;fontColor=#333333;strokeColor=#FF4500;" parent="1" vertex="1">
+          <mxGeometry x="220" y="450" width="260" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="edge2r" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="cat2" target="cat2_risk" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="180" y="165" />
+              <mxPoint x="180" y="480" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="cat2_expl" value="Из-за множественных точек регистрации&lt;br&gt;клиента логи разрознены.&lt;br&gt;Нарушен контроль данных -&lt;br&gt;невозможно отследить,&lt;br&gt;кто и когда менял конфигурации." style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFACD;fontColor=#333333;fontSize=10;align=left;" parent="1" vertex="1">
+          <mxGeometry x="200" y="530" width="300" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="edge2e" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;" parent="1" source="cat2_risk" target="cat2_expl" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="cat3" value="&lt;b&gt;Конфиденциальные данные&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#DC143C;fontColor=#ffffff;strokeColor=#8B0000;" parent="1" vertex="1">
+          <mxGeometry x="1160" y="-10" width="180" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="edge3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.75;exitY=0;exitDx=0;exitDy=0;" parent="1" source="center" target="cat3" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="cat3_data1" value="Персональные данные клиентов&lt;br&gt;(ФИО, телефон, email, адрес)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E6E6E6;fontColor=#333333;" parent="1" vertex="1">
+          <mxGeometry x="1080" y="80" width="280" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="edge3d1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.75;exitDx=0;exitDy=0;" parent="1" source="cat3" target="cat3_data1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1370" y="35" />
+              <mxPoint x="1370" y="105" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="cat3_data2" value="Платёжные данные&lt;br&gt;(банковские карты, счета)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E6E6E6;fontColor=#333333;" parent="1" vertex="1">
+          <mxGeometry x="1080" y="150" width="280" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="edge3d2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="cat3" target="cat3_data2" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1380" y="20" />
+              <mxPoint x="1380" y="175" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="cat3_data3" value="Данные сделок и бронирований" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E6E6E6;fontColor=#333333;" parent="1" vertex="1">
+          <mxGeometry x="1080" y="220" width="280" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="edge3d3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.25;exitDx=0;exitDy=0;" parent="1" source="cat3" target="cat3_data3" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1390" y="5" />
+              <mxPoint x="1390" y="245" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="cat3_risk1" value="&lt;b&gt;Риск: Утечка данных&lt;/b&gt;&lt;br&gt;Оценка: &lt;span style=&quot;color:#FF0000;&quot;&gt;Критический&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFB6C1;fontColor=#333333;strokeColor=#FF0000;" parent="1" vertex="1">
+          <mxGeometry x="1080" y="290" width="280" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="edge3r1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=0.75;exitDx=0;exitDy=0;" parent="1" source="cat3" target="cat3_risk1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1070" y="35" />
+              <mxPoint x="1070" y="320" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="cat3_expl1" value="• API партнёров передают избыточные ПДн&lt;br&gt;• Нет контроля доступа у DWH&lt;br&gt;• Клиенты видят чужие данные в ЛК&lt;br&gt;• Недавняя утечка у конкурента" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFACD;fontColor=#333333;fontSize=10;align=left;" parent="1" vertex="1">
+          <mxGeometry x="1060" y="370" width="320" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="edge3e1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;" parent="1" source="cat3_risk1" target="cat3_expl1" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="cat3_risk2" value="&lt;b&gt;Риск: Искажение данных&lt;/b&gt;&lt;br&gt;Оценка: &lt;span style=&quot;color:#FF0000;&quot;&gt;Критический&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFB6C1;fontColor=#333333;strokeColor=#FF0000;" parent="1" vertex="1">
+          <mxGeometry x="1080" y="470" width="280" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="edge3r2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=0.25;exitDx=0;exitDy=0;" parent="1" source="cat3" target="cat3_risk2" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1050" y="5" />
+              <mxPoint x="1050" y="500" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="cat3_expl2" value="Множественные точки регистрации клиента -&lt;br&gt;данные могут расходиться.&lt;br&gt;Пример: в ЛК отображается чужое ФИО." style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFACD;fontColor=#333333;fontSize=10;align=left;" parent="1" vertex="1">
+          <mxGeometry x="1060" y="550" width="320" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="edge3e2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;" parent="1" source="cat3_risk2" target="cat3_expl2" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="cat4" value="&lt;b&gt;Секретные данные&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#4B0082;fontColor=#ffffff;strokeColor=#2E004F;" parent="1" vertex="1">
+          <mxGeometry x="1160" y="690" width="180" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="edge4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;" parent="1" source="center" target="cat4" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="cat4_data1" value="Секреты инфраструктуры&lt;br&gt;(JWT-токены, API-ключи,&lt;br&gt;пароли БД)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#E6E6E6;fontColor=#333333;" parent="1" vertex="1">
+          <mxGeometry x="1110" y="770" width="280" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="edge4d1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.75;exitDx=0;exitDy=0;" parent="1" source="cat4" target="cat4_data1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1400" y="735" />
+              <mxPoint x="1400" y="800" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="cat4_risk" value="&lt;b&gt;Риск: Потеря / Утечка данных&lt;/b&gt;&lt;br&gt;Оценка: &lt;span style=&quot;color:#FF0000;&quot;&gt;Критический&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFB6C1;fontColor=#333333;strokeColor=#FF0000;" parent="1" vertex="1">
+          <mxGeometry x="1110" y="850" width="280" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="edge4r" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.25;exitDx=0;exitDy=0;" parent="1" source="cat4" target="cat4_risk" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1410" y="705" />
+              <mxPoint x="1410" y="880" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="cat4_expl" value="• Нарушен процесс передачи информации&lt;br&gt;  между командами и ИБ-специалистом&lt;br&gt;• Ключи могут быть скомпрометированы&lt;br&gt;• При утечке — полная потеря&lt;br&gt;  контроля над инфраструктурой" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFACD;fontColor=#333333;fontSize=10;align=left;" parent="1" vertex="1">
+          <mxGeometry x="1080" y="930" width="340" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="edge4e" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;" parent="1" source="cat4_risk" target="cat4_expl" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

@@ -1,0 +1,38 @@
+# Директория с сертификатами и ключами пользователей
+Task4/k8s-users/
+*.key
+*.crt
+*.csr
+*.kubeconfig
+*.pem
+
+# Minikube локальные файлы
+.minikube/
+.kube/
+
+# Task5: Network policies temp files
+*.tmp
+
+# Task6: Audit logs and policies
+Task6/k8s-audit/
+Task6/audit.log
+**/audit-policy.yaml
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+*.bak
+
+# Логи
+*.log

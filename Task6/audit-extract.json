@@ -1,0 +1,76 @@
+[
+  {
+    "_suspicious_category": "SECRET_ACCESS",
+    "_suspicious_reason": "Доступ к секретам",
+    "user": {
+      "username": "system:serviceaccount:secure-ops:monitoring"
+    },
+    "verb": "get",
+    "objectRef": {
+      "resource": "secrets",
+      "namespace": "kube-system",
+      "name": "default-token-abc123"
+    },
+    "requestReceivedTimestamp": "2026-04-07T10:30:00Z"
+  },
+  {
+    "_suspicious_category": "PRIVILEGED_POD",
+    "_suspicious_reason": "Создание привилегированного пода",
+    "user": {
+      "username": "kubernetes-admin"
+    },
+    "verb": "create",
+    "objectRef": {
+      "resource": "pods",
+      "namespace": "secure-ops",
+      "name": "privileged-pod"
+    },
+    "requestObject": {
+      "spec": {
+        "containers": [
+          {
+            "securityContext": {
+              "privileged": true
+            }
+          }
+        ]
+      }
+    },
+    "requestReceivedTimestamp": "2026-04-07T10:31:00Z"
+  },
+  {
+    "_suspicious_category": "EXEC_IN_POD",
+    "_suspicious_reason": "Выполнение команд в поде (kubectl exec)",
+    "user": {
+      "username": "kubernetes-admin"
+    },
+    "verb": "create",
+    "objectRef": {
+      "resource": "pods",
+      "subresource": "exec",
+      "namespace": "kube-system",
+      "name": "coredns-7d764666f9-pjjbm"
+    },
+    "requestReceivedTimestamp": "2026-04-07T10:32:00Z"
+  },
+  {
+    "_suspicious_category": "DANGEROUS_ROLEBINDING",
+    "_suspicious_reason": "Создание RoleBinding с правами cluster-admin",
+    "user": {
+      "username": "kubernetes-admin"
+    },
+    "verb": "create",
+    "objectRef": {
+      "resource": "rolebindings",
+      "namespace": "secure-ops",
+      "name": "escalate-binding"
+    },
+    "requestObject": {
+      "roleRef": {
+        "name": "cluster-admin",
+        "kind": "ClusterRole"
+      }
+    },
+    "requestReceivedTimestamp": "2026-04-07T10:33:00Z"
+  }
+]

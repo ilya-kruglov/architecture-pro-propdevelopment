@@ -1,0 +1,20 @@
+apiVersion: templates.gatekeeper.sh/v1
+kind: ConstraintTemplate
+metadata:
+  name: privilegedpods
+spec:
+  crd:
+    spec:
+      names:
+        kind: PrivilegedPods
+  targets:
+    - target: admission.k8s.gatekeeper.sh
+      rego: |
+        package privilegedpods
+        
+        violation[{"msg": msg}] {
+          container := input.review.object.spec.containers[_]
+          container.securityContext.privileged == true
+          msg := sprintf("Pod %v uses privileged container: %v", 
+            [input.review.object.metadata.name, container.name])
+        }
